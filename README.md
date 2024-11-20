@@ -3,7 +3,7 @@ This repository contains a set of codes developed to estimate long-term shorelin
 
 These characteristics and processes are:
   1. The additional erosion due to the demand of sand to fill the berm height along the dry beach after the SLR (Approach from **Rosati et al., 2013)**.
-  2. The additional retreat due to the demand of sand to fill the estuarine tidal flats after SLR (estuary infilling).
+  2. The additional retreat due to the demand of sand to fill the estuarine tidal flats after SLR (estuary infilling, described by **Toimil et al., 2017**).
   3. The presence of rocky outcrops or reef planforms. 
   4. The type of backshore (i.e. dune and seawall). 
   5. The effect of shoreline changes non related to the SLR.
@@ -115,9 +115,10 @@ This tool was developed under the national Spanish project _Estudio del efecto B
 </div>
 
 ## References
-- **Bruun, P. (1962)**: Sea-Level Rise as a Cause of Shore Erosion. _Journal of the Waterways and Harbors Division, 88(1), 117-130_. https://doi.org/10.1061/JWHEAU.0000252
-- **Rosati, J.D. et al.,(2013)**: The modified Bruun Rule extended for landward transport. _Mar.Geol.340,71-81_.https://doi.org/10.1016/j.margeo.2013.04.018 
-- **IHCantabria - CAGPyDS,  (2021)**: _Informe E1:Caracterización de los perfiles en la costa andaluza_,  in: _Estudio del efecto Bruun en distintos tramos de la costa andaluza_(_Bruun Andalucía_) Santander, Cantabria, Spain.
+- **Bruun, (1962)**: Sea-Level Rise as a Cause of Shore Erosion. _Journal of the Waterways and Harbors Division, 88(1), 117-130_. [https://doi.org/10.1061/JWHEAU.0000252](https://doi.org/10.1061/JWHEAU.0000252)
+- **Rosati, et al.,(2013)**: The modified Bruun Rule extended for landward transport. _Mar. Geol. 340, 71-81_. [https://doi.org/10.1016/j.margeo.2013.04.018](https://doi.org/10.1016/j.margeo.2013.04.018)
+- **Toimil, et al., (2017)**: Managing coastal erosion under climate change at the regional scale. _Coastal Engineering, 128, 106-122_. [https://doi.org/10.1016/j.coastaleng.2017.08.004](https://doi.org/10.1016/j.coastaleng.2017.08.004)
+- **IHCantabria - CAGPyDS, (2021)**: _Informe E1: Caracterización de los perfiles en la costa andaluza_, in: _Estudio del efecto Bruun en distintos tramos de la costa andaluza_ (_Bruun Andalucía_), Santander, Cantabria, Spain.
 
 ## Contact
 For questions or support, please contact 📧 [arnau.garcia@unican.es](mailto:arnau.garcia@unican.es).
