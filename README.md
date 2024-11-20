@@ -1,5 +1,5 @@
-# IH-Bruun Repository🌊🏖️🌫️⬆️
-This repository contains a set of code formulations developed to estimate long-term shoreline retreat due to sea level rise (SLR) in a beach profile. The formulas are based on the traditional Bruun's Rule **(Bruun, 1962)**, which was modified to include both coastal characteristics and processes not accounted for in the original model.
+# IH-Bruun 🌊🏖️🌫️⬆️
+This repository contains a set of codes developed to estimate long-term shoreline retreat due to sea level rise (SLR) in a beach profile. The formulas are based on the traditional Bruun's Rule **(Bruun, 1962)**, which was modified to include both coastal characteristics and processes not accounted for in the original model.
 
 These characteristics and processes are:
   1. The additional erosion due to the demand of sand to fill the berm height along the dry beach after the SLR (Approach from **Rosati et al., 2013)**.
