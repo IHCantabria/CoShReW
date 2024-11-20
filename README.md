@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DSR_Long_Term_Shoreline_Predict_Tool🌊🏖️🌫️⬆️
 The Long Term Shoreline Predict Tool is a set of formulas developed to estimate long-term shoreline retreat due to sea level rise (SLR) in a beach profile. The formulas are based on the traditional Bruun's Rule **(Bruun, 1962)**, which was modified to include both coastal characteristics and processes not accounted for in the original model.
 =======
