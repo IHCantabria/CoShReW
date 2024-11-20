@@ -1,12 +1,12 @@
 # IH-Bruun Repository🌊🏖️🌫️⬆️
-The Long Term Shoreline Predict Tool is a set of formulas developed to estimate long-term shoreline retreat due to sea level rise (SLR) in a beach profile. The formulas are based on the traditional Bruun's Rule **(Bruun, 1962)**, which was modified to include both coastal characteristics and processes not accounted for in the original model.
+This repository contains a set of code formulations developed to estimate long-term shoreline retreat due to sea level rise (SLR) in a beach profile. The formulas are based on the traditional Bruun's Rule **(Bruun, 1962)**, which was modified to include both coastal characteristics and processes not accounted for in the original model.
 
 These characteristics and processes are:
   1. The additional erosion due to the demand of sand to fill the berm height along the dry beach after the SLR (Approach from **Rosati et al., 2013)**.
   2. The additional retreat due to the demand of sand to fill the estuarine tidal flats after SLR (estuary infilling).
   3. The presence of rocky outcrops or reef planforms. 
   4. The type of backshore (i.e. dune and seawall). 
-  5. The effect of shoreline changes not related to the SLR.
+  5. The effect of shoreline changes non related to the SLR.
 
 These modifications aim to overcome some of the limitations of the original Bruun's Rule and allow the application of the formulas to a broader range of coastal environments. More details on the methodology proposed here can be found in the documents available in this repository.
 
@@ -86,7 +86,7 @@ The information is organized as follows: **Codes-documentation** & **Methodology
       
  
 ## Usage
-To use the Long Term Shoreline Retreat Tool, follow these steps:
+To use the materials of this repo, follow the next steps:
 
 1. Clone the repository to your local machine.
 2. Read the codes and methodology documentation. 
@@ -95,7 +95,7 @@ To use the Long Term Shoreline Retreat Tool, follow these steps:
 5. Save and check the output final results to understand the long-term shoreline erosion.
 
 ## Contributing
-Contributions to the Long Term Shoreline Retreat Tool are welcome! If you'd like to contribute, please follow these guidelines:
+Contributions to the **IH-Bruun** are welcome! If you'd like to contribute, please follow these guidelines:
 
  - Fork the repository.
  - Create your feature branch (git checkout -b feature/your-feature).
