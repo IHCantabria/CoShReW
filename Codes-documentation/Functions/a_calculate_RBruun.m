@@ -1,7 +1,7 @@
 %% Author: Arnau Garcia Tort
 %% Last modification: 05/03/2024
 %% Name's project: Bruun Regional & Local Application
-%% General formulation: Eq. (1)
+%% General formulation: Eq.(1) 
 %% [ R_Total = R_Bruun + R_Berm + R_Estuary + R_nonSLR ]
 %% This function calculates the first component named R_Bruun.
 % It enables the calculation of shoreline retreat for any beach using the

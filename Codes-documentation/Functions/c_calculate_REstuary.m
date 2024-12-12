@@ -3,10 +3,11 @@
 %% Name's project: Bruun Regional & Local Application
 %% General formulation: Eq. (1)
 %% [ R_Total = R_Bruun + R_Berm + R_Estuary + R_nonSLR ]
-%% This function permits calculation of the second component named R_Estuary.
+%% This function permits calculation of the third component named R_Estuary.
 % The function calculates the additional shoreline retreat due to estuary 
-% infilling after sea level rise (SLR from IPCC projections). 
-% This only affects those profiles that are nearby the estuary basins.
+% basin-infilling after sea level rise (SLR from IPCC projections). 
+% This only affects those profiles that are nearby the estuary basins,
+% without physical barriers. 
 
 %% Inputs:(hBeachEstuary,Berm,AreaEstuary,BeachLengthEstuary,AlphaEst,SLR) 
 % hBeachEstuary = Average depth of closure of the adjacent beaches to the estuary [m]

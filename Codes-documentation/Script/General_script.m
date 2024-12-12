@@ -1,6 +1,6 @@
 %% Autor: Arnau Garcia Tort
 %% Last modification: 05/03/2024
-%% Name's project: Bruun Regional & Local Application
+%% Name's project: Long-Term Shoreline Retreat Calculator
 %% 
 %% --------------------  General script -----------------------------------
 % This script calculates the long term coastal shoreline retreat of a beach
@@ -9,6 +9,7 @@
 
 % By this simple general formulation:
 % [R_Total = R_Bruun + R_Berm + R_Estuary + R_nonSLR]
+
 % This script:
 %% 1. Reads the initial matrix as input (Initial_Matrix: 5 beach profiles)
 %% 2. Preprocess: Defines index for all corrections needed
@@ -17,7 +18,7 @@
 %% 5. Implements all the corrections and limitations giving as only 1 Output
 %% 6. Save Output: R.Total_corrected (Matrix of 5 rows x 12 columns)
 
-close all; clear *; clc; % clear all variables & close all figures
+close all; clear *; clc; 
 
 %% 1) Define Paths: This must be adapted to your current work directory
 MainPath = '...Your Main Path...\Codes-documentation\';
@@ -28,11 +29,12 @@ addpath([MainPath '\Functions'])
 load('...Your Input Path...\Codes-documentation\Input\Initial_Matrix.mat')
 
 %% 2) Preprocessing -- Define all index needed depending on profile type --
-indh    = find(data.ind_h==2);      % profiles with rocky outcrops or reefs 
-% You can comment or uncomment 
-%inddune = find(data.ind_b==1);      % profiles with dunes on the backshore
-%indwall = find(data.ind_b==2);      % profiles with walls-cliffs- etc...
+indh    = find(data.ind_h==2);      % profiles with rocky outcrops or reefs
 
+% You can comment or uncomment 
+inddune = find(data.ind_b==1);      % profiles with dunes on the backshore
+indwall = find(data.ind_b==2);      % profiles with walls-cliffs- etc...
+indout = find(data.Outliers == 1);
 % This is just to know which data corresponds to each type of profile, for
 % example, in this initial matrix you have 5 hypothetical beach profiles: 
 
@@ -110,8 +112,8 @@ RnonSLR = d_calculate_RnonSLR(Scr,yy_target,yy_actual);
 R_Total = R_Bruun + R_Berm + R_Estuario + RnonSLR; 
 
 %% 5) Correcting R.Total 
-R_Total_corrected = e_Rtotal_corection(R_Total,hast,B,Wast,SLR,L,Hd,Ld,BackShoreType);
+R_Total_corrected = e_Rtotal_corection(R_Total,hast,B,L,Hd,Ld,BackShoreType);
 
 %% 6) Saving Output: R_Total_corrected
 cd(SavePath)
-save('Final_Shoreline_Retreats_2024',"R_Total_corrected"); 
+%save('Final_Shoreline_Retreats',"R_Total_corrected"); 

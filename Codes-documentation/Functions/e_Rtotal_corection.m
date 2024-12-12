@@ -1,9 +1,9 @@
 %% Autor: Arnau Garcia Tort
 %% Last modification: 05/03/2024
 %% Name's project: Bruun Regional & Local Application
-%% General formulation: Eq. (1)
+%% General formulation: Eq.(1)
 %% [ R_Total = R_Bruun + R_Berm + R_Estuary + R_nonSLR ]
-%% This function permits to correct final shrl. retreat named R_Total.
+%% This function permits to correct R_Total to the final [R_Total_corrected]
 % This function allows to correct the final shrl.retreat depending on the
 % site-specific caracteristics of the beach profile
 
@@ -19,9 +19,9 @@
     % BackShoreType: Index that indicates the kind of backshore we have. 
 %%
 
-function [R_Total] = e_Rtotal_corection(R_Total, hast, B, Wast, SLR, L, Hd, Ld, BackShoreType)
+function [R_Total] = e_Rtotal_corection(R_Total, hast, B, L, Hd, Ld, BackShoreType)
 
-%% Correction #1 - Corrects Sea-Wall-Cliff- vertical ended profiles 
+%% Correction #1 - Corrects Seawall-Cliff- ended profiles 
 %idx1 = Profiles with a Sea-Wall where final retreat has already eroded all
 %the dry beach sediment available 
 idx1 = BackShoreType & R_Total > L; 
@@ -35,8 +35,10 @@ R_Total(idx1) = L(idx1); % If the condition is true, the final retreat must
 idx2 = ~BackShoreType & R_Total > L; 
 
 % Aplying the Dune's retreat adaptation: Equation (9)
-R_Total(idx2) = ( SLR(idx2).*Wast(idx2) - ...
-    (R_Total(idx2)-L(idx2)).*Hd(idx2) ) ./ (B(idx2)+hast(idx2)); 
+R_Total(idx2) = R_Total(idx2) - (((R_Total(idx2)-L(idx2)).*Hd(idx2))./ (B(idx2)+hast(idx2)));
+
+%This formulation is only valid if R_Bruun erodes the hole dry beach
+% R_Total(idx2) = (SLR(idx2).*Wast(idx2) - (R_Total(idx2)-L(idx2)).*Hd(idx2) ) ./ (B(idx2)+hast(idx2)); 
 
 %idx3 = Dune profiles where final retreat erodes all the 1rst dune ridge sand
 idx3 = ~BackShoreType & R_Total > L+Ld; % Equation (10) 
