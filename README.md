@@ -112,6 +112,13 @@ This tool was developed under the national Spanish project _Estudio del efecto B
   <a href="https://github.com/IHCantabria/IH-Bruun.Methodology">
     <img src="Repo-logos/Logos.png" alt="Logo aknowledgements" width="40%">
   </a>
+  </a>
+</div>
+
+<div align="center" style="margin-bottom: 20px;">
+  <a href="https://github.com/ArnauGT98/Long_Term_Shoreline_Retreat_Calculator">
+    <img src="Repo-logos/Logos2.png" alt="Logo aknowledgements" width="40%">
+  </a>
 </div>
 
 ## References
