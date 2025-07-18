@@ -1,17 +1,17 @@
-# IH-Bruun ⬆️🌊🏖️🔜
-This repository contains a set of codes developed to estimate long-term shoreline retreat due to sea level rise (SLR) in a beach profile. The formulas are based on the traditional Bruun's Rule **(Bruun, 1962)**, which was modified to include both coastal characteristics and processes not accounted for in the original model.
+# Composite Shoreline‑Retreat Workflow (CoShReW) ⬆️🌊🏖️🔜
+This repository contains a set of codes developed to estimate long-term shoreline retreat due to sea level rise (SLR) in cros-shore beach profiles. The workflow is grounded on the traditional Bruun's Rule **(Bruun, 1962)**, but incorporates several refinements drawn from prior research, to enhance its applicability to a wider range of coastal environments. The codes are designed to be user-friendly, allowing for easy adaptation to site-specific coastal settings.
 
-These characteristics and processes are:
-  1. The additional erosion due to the demand of sand to fill the berm height along the dry beach after the SLR (Approach from **Rosati et al., 2013)**.
-  2. The additional retreat due to the demand of sand to fill the estuarine tidal flats after SLR. This process, known as estuary basin infilling, was first identified by **Ranasinghe et al. (2013)** and further explored in subsequent research by **Toimil et al. (2017)**.
-  4. The presence of rocky outcrops or reef planforms. 
-  5. The type of backshore (i.e. dune and seawall). 
-  6. The effect of shoreline changes non related to the SLR.
+Apart from the Bruun Rule, the other processes accounted on CoShReW are:
+  1. The additional sand demand to fill the berm height along the dry beach after the SLR (Approach from **Rosati et al., 2013)**.
+  2. The additional sand demand to fill the estuarine tidal flats after SLR. This process, known as estuary or basin infilling, was identified by **Ranasinghe et al. (2013)** and further researched in subsequent research by **Toimil et al. (2017)**.
+  4. The presence of rocky platforms, outcrops or reef barriers. 
+  5. The type of backshore (i.e. sandy-dunes and seawalls or cliffs). 
+  6. The effect of shoreline changes non related to the SLR. For instance, chronic erosion or accretion rates, which can be included in the calculations as a constant value.
 
-These modifications aim to overcome some of the limitations of the original Bruun's Rule and allow the application of the formulas to a broader range of coastal environments. More details on the methodology proposed here can be found in the documents available in this repository.
+These modifications aim to overcome some of the limitations of the original Bruun's Rule and allow the application of the formulas to site-speciffic complex coastal settings. More details on the methodology proposed here can be found in the documents available in this repository.
 
 ### License & language
-This repo is open-access and is fully developed in **MATLAB**.
+This repo is open-access and is fully developed in **MATLAB**. 
 
 ## Structure
 The information is organized as follows: **Codes-documentation** & **Methodology-documentation** 
@@ -95,7 +95,7 @@ To use the materials of this repo, follow the next steps:
 5. Save and check the output final results to understand the long-term shoreline erosion.
 
 ## Contributing
-Contributions to the **IH-Bruun** are welcome! If you'd like to contribute, please follow these guidelines:
+Contributions to the **CoShReW** are welcome! If you'd like to contribute, please follow these guidelines:
 
  - Fork the repository.
  - Create your feature branch (git checkout -b feature/your-feature).
@@ -109,14 +109,14 @@ Contributions to the **IH-Bruun** are welcome! If you'd like to contribute, plea
 This tool was developed under the national Spanish project _Estudio del efecto Bruun en distintos tramos de la costa andaluza_ _(Bruun Andalucía)_, **(IHCantabria - Junta de Andalucía, 2021)**. We are grateful for the support provided by the European FEDER funding, which enabled the advancements showcased in this project, as well as the ongoing research efforts. Special thanks are extended to _Consejería de Economía, Hacienda y Fondos Europeos (CEHYFE)_ for their support and collaboration throughout this work.
 
 <div align="center">
-  <a href="https://github.com/IHCantabria/IH-Bruun.Methodology">
+  <a href="https://github.com/ArnauGT98/IH-Bruun/Repo-logos/">
     <img src="Repo-logos/Logos.png" alt="Logo aknowledgements" width="40%">
   </a>
   </a>
 </div>
 
 <div align="center" style="margin-bottom: 20px;">
-  <a href="https://github.com/ArnauGT98/Long_Term_Shoreline_Retreat_Calculator">
+  <a href="https://github.com/ArnauGT98/IH-Bruun/Repo-logos/">
     <img src="Repo-logos/Logos2.png" alt="Logo aknowledgements" width="40%">
   </a>
 </div>
@@ -124,7 +124,7 @@ This tool was developed under the national Spanish project _Estudio del efecto B
 ## References
 - **Bruun (1962)**: Sea-Level Rise as a Cause of Shore Erosion. _Journal of the Waterways and Harbors Division, 88(1), 117-130_. [https://doi.org/10.1061/JWHEAU.0000252](https://doi.org/10.1061/JWHEAU.0000252)
 - **Rosati et al. (2013)**: The modified Bruun Rule extended for landward transport. _Mar. Geol. 340, 71-81_. [https://doi.org/10.1016/j.margeo.2013.04.018](https://doi.org/10.1016/j.margeo.2013.04.018)
-- **Ranasinghe et al. (2013)** :Climate-change impact assessment for inlet-interrupted coastlines. _Nature Clim Change 3, 83–87._ [https://doi.org/10.1038/nclimate1664](https://doi.org/10.1038/nclimate1664)
+- **Ranasinghe et al. (2013)**: Climate-change impact assessment for inlet-interrupted coastlines. _Nature Clim Change 3, 83–87._ [https://doi.org/10.1038/nclimate1664](https://doi.org/10.1038/nclimate1664)
 - **Toimil, et al., (2017)**: Managing coastal erosion under climate change at the regional scale. _Coastal Engineering, 128, 106-122_. [https://doi.org/10.1016/j.coastaleng.2017.08.004](https://doi.org/10.1016/j.coastaleng.2017.08.004)
 - **IHCantabria - CAGPyDS, (2021)**: _Informe E1: Caracterización de los perfiles en la costa andaluza_, in: _Estudio del efecto Bruun en distintos tramos de la costa andaluza_ (_Bruun Andalucía_), Santander, Cantabria, Spain.
 
