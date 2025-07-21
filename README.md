@@ -20,9 +20,9 @@ The information is organized as follows: **Codes-documentation** & **Methodology
 - **Codes-documentation**: This folder contains the codes, some examples of input data so the user can apply it and the respective documentation. 
     The Codes-documentation is divided into 4 subfolders: 
 
-    - [Functions](https://github.com/ArnauGT98/IH-Bruun/tree/main/Codes-documentation/Functions): Contains the functions required to calculate the shoreline retreat. All these functions are sequentially called from the general script named "General_script.m," which is stored inside the "Script" subfolder.
+    - [Functions](https://github.com/ArnauGT98/CoShReW/tree/main/Codes-documentation/Functions): Contains the functions required to calculate the shoreline retreat. All these functions are sequentially called from the general script named "General_script.m," which is stored inside the "Script" subfolder.
 
-    - [Input](https://github.com/ArnauGT98/IH-Bruun/tree/main/Codes-documentation/Input): Contains the Initial Matrix file, which is an example of the input for calculation, and a README file for further details. The Input_Matrix.mat file is a 5x30 matrix: 5 hypothetical beach profiles and their 30 calculation parameters.     
+    - [Input](https://github.com/ArnauGT98/CoShReW/tree/main/Codes-documentation/Input): Contains the Initial Matrix file, which is an example of the input for calculation, and a README file for further details. The Input_Matrix.mat file is a 5x30 matrix: 5 hypothetical beach profiles and their 30 calculation parameters.     
 
       **Each row corresponds to the 5 hypothetical beach profiles:** 
         - (1) Sandy beach profile 
@@ -72,9 +72,9 @@ The information is organized as follows: **Codes-documentation** & **Methodology
 
   </details>
 
-    - [Output](https://github.com/ArnauGT98/IH-Bruun/tree/main/Codes-documentation/Output): Contains the file with the results from the calculation: Final_Shoreline_Retreats_2021.mat. This is a 5x12 matrix with the final shoreline retreats calculated for the 5 profiles and 12 SLR scenarios. See the README.txt file for more details. 
+    - [Output](https://github.com/ArnauGT98/CoShReW/tree/main/Codes-documentation/Output): Contains the file with the results from the calculation: Final_Shoreline_Retreats_2021.mat. This is a 5x12 matrix with the final shoreline retreats calculated for the 5 profiles and 12 SLR scenarios. See the README.txt file for more details. 
 
-    - [Script](https://github.com/ArnauGT98/IH-Bruun/tree/main/Codes-documentation/Script): Contains the general script, which calls all the functions and computes the final shoreline retreats. 
+    - [Script](https://github.com/ArnauGT98/CoShReW/tree/main/Codes-documentation/Script): Contains the general script, which calls all the functions and computes the final shoreline retreats. 
     
   The code and functions include comments with explanations, and further information can be found in the methodology documentation folder.
 
@@ -82,7 +82,7 @@ The information is organized as follows: **Codes-documentation** & **Methodology
 
     It only contains 1 file: 
 
-    - [1_Methodology](https://github.com/ArnauGT98/IH-Bruun/blob/main/Methodology-documentation/1_Methodology.pdf): This PDF file describes the formulas, their parameters and some tips to estimate each of these parameters in a certain area of interest.
+    - [1_Methodology](https://github.com/ArnauGT98/CoShReW/blob/main/Methodology-documentation/1_Methodology.pdf): This PDF file describes the formulas, their parameters and some tips to estimate each of these parameters in a certain area of interest.
       
  
 ## Usage
@@ -109,14 +109,14 @@ Contributions to the **CoShReW** are welcome! If you'd like to contribute, pleas
 This tool was developed under the national Spanish project _Estudio del efecto Bruun en distintos tramos de la costa andaluza_ _(Bruun Andalucía)_, **(IHCantabria - Junta de Andalucía, 2021)**. We are grateful for the support provided by the European FEDER funding, which enabled the advancements showcased in this project, as well as the ongoing research efforts. Special thanks are extended to _Consejería de Economía, Hacienda y Fondos Europeos (CEHYFE)_ for their support and collaboration throughout this work.
 
 <div align="center">
-  <a href="https://github.com/ArnauGT98/IH-Bruun/Repo-logos/">
+  <a href="https://github.com/ArnauGT98/CoShReW/Repo-logos/">
     <img src="Repo-logos/Logos.png" alt="Logo aknowledgements" width="40%">
   </a>
   </a>
 </div>
 
 <div align="center" style="margin-bottom: 20px;">
-  <a href="https://github.com/ArnauGT98/IH-Bruun/Repo-logos/">
+  <a href="https://github.com/ArnauGT98/CoShReW/Repo-logos/">
     <img src="Repo-logos/Logos2.png" alt="Logo aknowledgements" width="40%">
   </a>
 </div>
